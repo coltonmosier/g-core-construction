@@ -1,14 +1,22 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-function App() {
+import About from './pages/About/About'
+import Home from './pages/Home'
+import NavBar from './components/NavBar'
 
-  return (
-    <>
-      <div className='text-3xl font-bold underline text-center'>
-        <h1 >Kelvyn + Colton</h1>
-      </div>
-    </>
-  )
+function App(): JSX.Element {
+
+    return (
+        <BrowserRouter>
+            <NavBar />
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/contact' element={<h1>Contact</h1>} />
+            </Routes>
+        </BrowserRouter>
+    )
 }
 
 export default App
