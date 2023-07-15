@@ -18,6 +18,7 @@ function App(): JSX.Element {
     return (
         <BrowserRouter>
             <ThemeProvider theme={darkTheme}>
+                <CssBaseline />
                 <NavBar />
                 <Routes>
                     <Route path='/' element={<Home />} />
