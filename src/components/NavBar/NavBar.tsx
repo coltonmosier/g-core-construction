@@ -8,8 +8,9 @@ export default function ButtonAppBar() {
       <AppBar className='mb-8 sticky' >
         <Toolbar>
             <Link className='mr-3 text-xl' to='/'>Home</Link>
-            <Link className='ml-2 text-xl' to='/about'>About</Link>
-          <Typography variant="h3"  sx={{ flexGrow: 1 }}>
+            <Link className='mr-3 text-xl' to='/about'>About</Link>
+            <Link className='mr-3 text-xl' to='/gallery'>Gallery</Link>
+          <Typography variant="h3"  sx={{ flexGrow: 1, paddingRight: "11rem" }}>
             G Core Construction
           </Typography>
         </Toolbar>
