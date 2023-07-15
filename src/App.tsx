@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-import { CssBaseline } from '@mui/material'
+// import { CssBaseline } from '@mui/material'
 
 import About from './pages/About/About'
 import Home from './pages/Home'
